@@ -55,6 +55,7 @@ class Lesson(models.Model):
         null=True,
         verbose_name='предмет',
         on_delete=models.CASCADE)
+    
     teacher = models.ForeignKey(
         Teacher,
         null=True,
